@@ -1,0 +1,91 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text x="450" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a2e">4-to-1 MUX — Gate Level Logic Circuit</text>
+  <text x="450" y="50" font-size="12" text-anchor="middle" fill="#4a5568">Y = EN . [ (I0.S1'.S0') + (I1.S1'.S0) + (I2.S1.S0') + (I3.S1.S0) ]  — 4 AND gates + 1 OR gate + 2 NOT gates</text>
+
+  <!-- Select line buses -->
+  <text x="24" y="88" font-size="13" fill="#22543d">S1</text>
+  <line x1="55" y1="83" x2="860" y2="83" stroke="#38a169" stroke-width="2"/>
+
+  <text x="24" y="123" font-size="13" fill="#2c5282">S0</text>
+  <line x1="55" y1="118" x2="860" y2="118" stroke="#2b6cb0" stroke-width="2"/>
+
+  <polygon points="55,145 55,165 85,155" fill="#ffffff" stroke="#38a169" stroke-width="2"/>
+  <circle cx="89" cy="155" r="4" fill="#ffffff" stroke="#38a169" stroke-width="2"/>
+  <line x1="93" y1="155" x2="860" y2="155" stroke="#38a169" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="30" y="142" font-size="11" fill="#22543d">S1'</text>
+
+  <polygon points="55,180 55,200 85,190" fill="#ffffff" stroke="#2b6cb0" stroke-width="2"/>
+  <circle cx="89" cy="190" r="4" fill="#ffffff" stroke="#2b6cb0" stroke-width="2"/>
+  <line x1="93" y1="190" x2="860" y2="190" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="30" y="177" font-size="11" fill="#2c5282">S0'</text>
+
+  <!-- Data input lines, each dedicated to one AND gate directly below -->
+  <text x="15" y="238" font-size="13" fill="#1a1a2e">I0</text>
+  <text x="215" y="238" font-size="13" fill="#1a1a2e">I1</text>
+  <text x="415" y="238" font-size="13" fill="#1a1a2e">I2</text>
+  <text x="615" y="238" font-size="13" fill="#1a1a2e">I3</text>
+
+  <!-- AND gate 1 -> for I0, active S1'.S0' -->
+  <g>
+    <path d="M 130 260 h26 a28 28 0 0 1 0 56 h-26 Z" fill="#ebf8ff" stroke="#1a1a2e" stroke-width="2"/>
+    <line x1="40"  y1="235" x2="130" y2="268" stroke="#1a1a2e" stroke-width="1.5"/>
+    <line x1="93"  y1="155" x2="130" y2="280" stroke="#38a169" stroke-width="1"/>
+    <line x1="93"  y1="190" x2="130" y2="300" stroke="#2b6cb0" stroke-width="1"/>
+    <text x="90" y="335" font-size="11" fill="#4a5568">I0.S1'.S0'</text>
+  </g>
+
+  <!-- AND gate 2 -> for I1, active S1'.S0 -->
+  <g>
+    <path d="M 330 260 h26 a28 28 0 0 1 0 56 h-26 Z" fill="#ebf8ff" stroke="#1a1a2e" stroke-width="2"/>
+    <line x1="240" y1="235" x2="330" y2="268" stroke="#1a1a2e" stroke-width="1.5"/>
+    <line x1="93"  y1="155" x2="330" y2="280" stroke="#38a169" stroke-width="1"/>
+    <line x1="55"  y1="118" x2="330" y2="300" stroke="#2b6cb0" stroke-width="1"/>
+    <text x="280" y="335" font-size="11" fill="#4a5568">I1.S1'.S0</text>
+  </g>
+
+  <!-- AND gate 3 -> for I2, active S1.S0' -->
+  <g>
+    <path d="M 530 260 h26 a28 28 0 0 1 0 56 h-26 Z" fill="#ebf8ff" stroke="#1a1a2e" stroke-width="2"/>
+    <line x1="440" y1="235" x2="530" y2="268" stroke="#1a1a2e" stroke-width="1.5"/>
+    <line x1="55"  y1="83"  x2="530" y2="280" stroke="#38a169" stroke-width="1"/>
+    <line x1="93"  y1="190" x2="530" y2="300" stroke="#2b6cb0" stroke-width="1"/>
+    <text x="480" y="335" font-size="11" fill="#4a5568">I2.S1.S0'</text>
+  </g>
+
+  <!-- AND gate 4 -> for I3, active S1.S0 -->
+  <g>
+    <path d="M 730 260 h26 a28 28 0 0 1 0 56 h-26 Z" fill="#ebf8ff" stroke="#1a1a2e" stroke-width="2"/>
+    <line x1="640" y1="235" x2="730" y2="268" stroke="#1a1a2e" stroke-width="1.5"/>
+    <line x1="55"  y1="83"  x2="730" y2="280" stroke="#38a169" stroke-width="1"/>
+    <line x1="55"  y1="118" x2="730" y2="300" stroke="#2b6cb0" stroke-width="1"/>
+    <text x="680" y="335" font-size="11" fill="#4a5568">I3.S1.S0</text>
+  </g>
+
+  <!-- Lines feeding data inputs down to each AND gate -->
+  <line x1="40"  y1="235" x2="40"  y2="235" stroke="#1a1a2e"/>
+  <line x1="40"  y1="220" x2="40"  y2="235" stroke="#1a1a2e" stroke-width="2"/>
+  <line x1="240" y1="220" x2="240" y2="235" stroke="#1a1a2e" stroke-width="2"/>
+  <line x1="440" y1="220" x2="440" y2="235" stroke="#1a1a2e" stroke-width="2"/>
+  <line x1="640" y1="220" x2="640" y2="235" stroke="#1a1a2e" stroke-width="2"/>
+
+  <!-- OR gate combining all 4 AND outputs -->
+  <path d="M 400 420 q 60 0 60 45 q 0 45 -60 45 q 20 -45 0 -90 Z" fill="#fefcbf" stroke="#975a16" stroke-width="2"/>
+  <line x1="184" y1="288" x2="400" y2="435" stroke="#1a1a2e" stroke-width="1.2"/>
+  <line x1="384" y1="288" x2="400" y2="450" stroke="#1a1a2e" stroke-width="1.2"/>
+  <line x1="584" y1="288" x2="400" y2="465" stroke="#1a1a2e" stroke-width="1.2"/>
+  <line x1="784" y1="288" x2="400" y2="480" stroke="#1a1a2e" stroke-width="1.2"/>
+  <text x="410" y="470" font-size="14" font-weight="bold" fill="#975a16">OR</text>
+
+  <!-- Final AND with EN -->
+  <path d="M 560 445 h26 a28 28 0 0 1 0 56 h-26 Z" fill="#ebf8ff" stroke="#1a1a2e" stroke-width="2"/>
+  <line x1="460" y1="465" x2="560" y2="465" stroke="#1a1a2e" stroke-width="2"/>
+  <text x="490" y="460" font-size="11" fill="#4a5568">(OR result)</text>
+  <line x1="500" y1="410" x2="580" y2="453" stroke="#d69e2e" stroke-width="2"/>
+  <text x="500" y="405" font-size="13" fill="#975a16">EN</text>
+
+  <line x1="614" y1="473" x2="670" y2="473" stroke="#1a1a2e" stroke-width="2"/>
+  <text x="678" y="478" font-size="18" font-weight="bold" fill="#1a1a2e">Y</text>
+
+  <text x="450" y="570" font-size="12" text-anchor="middle" fill="#718096">Four AND gates decode which input is "selected"; the OR gate combines them; a final AND gates the whole thing with EN.</text>
+</svg>

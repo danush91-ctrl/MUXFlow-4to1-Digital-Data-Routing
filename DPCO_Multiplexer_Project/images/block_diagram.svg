@@ -1,0 +1,52 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect width="800" height="500" fill="#ffffff"/>
+
+  <text x="400" y="35" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a2e">4-to-1 MULTIPLEXER — Block Diagram</text>
+
+  <!-- Main MUX block (trapezoid style) -->
+  <polygon points="300,110 500,150 500,350 300,390" fill="#2b6cb0" stroke="#1a365d" stroke-width="3"/>
+  <text x="400" y="240" font-size="26" font-weight="bold" text-anchor="middle" fill="#ffffff">MUX</text>
+  <text x="400" y="265" font-size="14" text-anchor="middle" fill="#dbeafe">4-to-1 Line</text>
+
+  <!-- Data Inputs (left) -->
+  <line x1="120" y1="140" x2="300" y2="140" stroke="#1a1a2e" stroke-width="3"/>
+  <text x="130" y="130" font-size="16" fill="#1a1a2e">I0</text>
+  <circle cx="120" cy="140" r="4" fill="#1a1a2e"/>
+
+  <line x1="120" y1="200" x2="300" y2="200" stroke="#1a1a2e" stroke-width="3"/>
+  <text x="130" y="190" font-size="16" fill="#1a1a2e">I1</text>
+  <circle cx="120" cy="200" r="4" fill="#1a1a2e"/>
+
+  <line x1="120" y1="290" x2="300" y2="290" stroke="#1a1a2e" stroke-width="3"/>
+  <text x="130" y="280" font-size="16" fill="#1a1a2e">I2</text>
+  <circle cx="120" cy="290" r="4" fill="#1a1a2e"/>
+
+  <line x1="120" y1="360" x2="300" y2="360" stroke="#1a1a2e" stroke-width="3"/>
+  <text x="130" y="350" font-size="16" fill="#1a1a2e">I3</text>
+  <circle cx="120" cy="360" r="4" fill="#1a1a2e"/>
+
+  <!-- Enable Input (top) -->
+  <line x1="330" y1="90" x2="330" y2="140" stroke="#d69e2e" stroke-width="3"/>
+  <text x="300" y="80" font-size="16" fill="#975a16">EN</text>
+
+  <!-- Select lines (bottom) -->
+  <line x1="380" y1="440" x2="380" y2="370" stroke="#38a169" stroke-width="3"/>
+  <line x1="450" y1="440" x2="450" y2="330" stroke="#38a169" stroke-width="3"/>
+  <text x="380" y="458" font-size="16" text-anchor="middle" fill="#22543d">S1</text>
+  <text x="450" y="458" font-size="16" text-anchor="middle" fill="#22543d">S0</text>
+  <text x="415" y="480" font-size="13" text-anchor="middle" fill="#22543d">SELECT LINES</text>
+
+  <!-- Output (right) -->
+  <line x1="500" y1="250" x2="680" y2="250" stroke="#1a1a2e" stroke-width="3"/>
+  <text x="690" y="255" font-size="18" font-weight="bold" fill="#1a1a2e">Y</text>
+
+  <!-- Legend -->
+  <rect x="60" y="410" width="16" height="16" fill="#1a1a2e"/>
+  <text x="82" y="423" font-size="13" fill="#1a1a2e">Data lines</text>
+
+  <rect x="190" y="410" width="16" height="16" fill="#d69e2e"/>
+  <text x="212" y="423" font-size="13" fill="#1a1a2e">Enable line</text>
+
+  <rect x="330" y="410" width="16" height="16" fill="#38a169"/>
+  <text x="352" y="423" font-size="13" fill="#1a1a2e">Select lines</text>
+</svg>
