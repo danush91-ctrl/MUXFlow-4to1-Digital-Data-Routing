@@ -1,4 +1,4 @@
-# 4-to-1 Multiplexer — DPCO Lab Project
+# MUXFlow-4to1-Digital-Data-Routing
 
 **Course:** Digital Principles & Computer Organization (DPCO)
 **Experiment Type:** Combinational Logic Circuit Design & Simulation
